@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.container {
+  padding: 24px;
+}
+
+.row {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title,
+.loadingScreen--title,
+.orderFulfilled--title {
+  color: white;
+  font-weight: 500;
+  font-size: 42px;
+  margin-bottom: 128px;
+}
+
+.loadingScreen--circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.orderForm__top {
+  margin: 16px 0;
+  display: flex;
+  width: 100%;
+}
+
+.orderForm__top .MuiTextField-root {
+  width: 100%;
+}
+
+.orderForm__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+@media (max-width: 335px) {
+  .orderForm__bottom {
+    flex-direction: column;
+  }
+}
+
+/*  */
+
+.stockInfoBox {
+  margin: 16px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 6px;
+  padding: 16px;
+  background-color: #332d32;
+  border: 1px solid black;
+}
+
+@media (max-width: 320px) {
+  .stockInfoBox {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 8px;
+  }
+}
+
+.stockInfoBox--left {
+  letter-spacing: 1px;
+}
+
+.stockInfoBox__left--security {
+  font-size: 42px;
+  font-weight: 500;
+}
+
+.stockInfoBox__right--price {
+  font-weight: 400;
+}
+
+/*  */
+
+.estimatedBox {
+  margin-bottom: 56px;
+  padding: 16px;
+}
+
+.estimatedBox--title {
+  margin-bottom: 8px;
+  color: gray;
+  font-size: 16px;
+}
+
+.MuiFormLabel-root {
+  color: #504d53 !important;
+}
+
+.MuiOutlinedInput-input {
+  color: white !important;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border: #504d53 2px solid !important;
+}
+
+.buyBtn {
+  float: right;
+}
